@@ -15,9 +15,9 @@
         return {
             scriptTagLength,
             zIndex: getAttr(lastScriptTag, "zIndex", -1), // canvas在页面上的z轴索引
-            opacity: getAttr(lastScriptTag, "opacity", .9), // 线段的透明度
-            lineColor: getAttr(lastScriptTag, "color", "255,0,0"), // 线段的颜色
-            count: getAttr(lastScriptTag, "count", 50) // 最大蜘蛛网数量
+            opacity: getAttr(lastScriptTag, "opacity", .5), // 线段的透明度
+            lineColor: getAttr(lastScriptTag, "color", "237,72,69"), // 线段的颜色
+            count: getAttr(lastScriptTag, "count", 99) // 最大蜘蛛网数量
         }
     }
 
