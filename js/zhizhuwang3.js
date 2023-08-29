@@ -22,7 +22,7 @@
       l: script_len, //长度，用于生成id用
       z: get_attribute(script, "zIndex", -1), //z-index
       o: get_attribute(script, "opacity", 1), //透明度(0.5)
-      c: get_attribute(script, "color", "237,72,69"), //颜色
+      c: get_attribute(script, "color", "255,0,0"), //颜色
       n: get_attribute(script, "count", 99) //count
     };
   }
