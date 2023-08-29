@@ -119,7 +119,7 @@
             y,
             xa,
             ya, // -1 到 1 之间的随机值
-            max: 150  // 最大线段长度
+            max: 50  // 最大线段长度
         })
     };
     var withMouseArr = itemArr.concat([mouse]);
