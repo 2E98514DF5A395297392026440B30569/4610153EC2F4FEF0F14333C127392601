@@ -1,6 +1,6 @@
 # 网页美化
 
-## 哪吒美化
+## 探针美化
 ```shell
 <!-- 引入css -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/2E98514DF5A395297392026440B30569/4610153EC2F4FEF0F14333C127392601/css/nezha.css">
