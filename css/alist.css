@@ -2,6 +2,17 @@
 .notify-render .hope-close-button{
 	display: none;
 }
+        /* 
+            樱花：https://www.dmoe.cc
+            夏沫：https://cdn.seovx.com
+            搏天：https://api.btstu.cn/doc/sjbz.php
+            姬长信：https://github.com/insoxin/API
+            小歪：https://api.ixiaowai.cn/
+            保罗：https://api.paugram.com
+            墨天逸：https://api.mtyqx.cn
+            岁月小筑：https://img.xjh.me
+            东方Project：https://img.paulzzh.com
+        */
 /*白天背景图*/
 .hope-ui-light{
   background-image: url("https://bing-wallpaper.narutos.top/?rand=true") !important;
@@ -9,37 +20,48 @@
 }
 /*夜间背景图*/
 .hope-ui-dark {
-    background-image: url(https://bing-wallpaper.narutos.top/?rand=true) !important;
+    background-image: url("https://bing-wallpaper.narutos.top/?rand=true") !important;
     background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position-x:center;
 }
-/*主列表透明*/
+/* 主列表夜间模式透明，50%这数值是控制透明度大小的 */
+.obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-iigjoxS-css{
+background-color:rgb(0 0 0 / 50%) !important;
+}
+/* readme夜间模式透明，50%这数值是控制透明度大小的 */
+.hope-c-PJLV.hope-c-PJLV-iiuDLME-css{
+background-color:rgb(0 0 0 / 50%) !important;
+}
+/* 主列表透明 */
 .obj-box.hope-stack.hope-c-dhzjXW.hope-c-PJLV.hope-c-PJLV-igScBhH-css {
 background-color: rgba(255, 255, 255, 0.5) !important;
 }
-/*readme透明*/
+/* readme透明 */
 .hope-c-PJLV.hope-c-PJLV-ikSuVsl-css{
 background-color: rgba(255, 255, 255, 0.5) !important;
 }
-/*顶部右上角切换按钮透明*/
+/* 右上角切换按钮透明 1为不透明*/
 .hope-c-ivMHWx-hZistB-cv.hope-icon-button{
 background-color: rgba(255, 255, 255, 0.3) !important;
 }
-/*右下角侧边栏按钮透明*/
+/* 右上角搜索栏透明 */
+.hope-c-PJLV-ikEIIxw-css{
+background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* 右下角侧边栏按钮透明 */
 .hope-c-PJLV-ijgzmFG-css{
 background-color: rgba(255, 255, 255, 0.5) !important;
 }
-
-
-/*白天模式代码块透明*/
+/* 白天模式代码块透明 */
 .hope-ui-light pre{
-    background-color: rgba(255, 255, 255, 0.1) !important;
+    background-color: rgba(255, 255, 255, 0.3) !important;
 }
-/*夜间模式代码块透明*/
+/* 夜间模式代码块透明 */
 .hope-ui-dark pre {
-    background-color: rgba(255, 255, 255, 0) !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
 }
 
-/*底部CSS，.APP .tanle这三个一起的*/
+/* 底部CSS，.App .table这三个一起的 */
 dibu {
     border-top: 0px;
     position: absolute;
@@ -54,18 +76,51 @@ dibu {
 .table {
     margin: auto;
 }
-/*去掉底部*/
+
+
+/* 去掉底部 */
 .footer {
     display: none !important;
 }
 
-/*全局字体*/
+/* 全局字体 */
 *{font-family:LXGW WenKai}
 *{font-weight:bold}
 body {font-family: LXGW WenKai;}
 
+/* 以下为评论系统专用 */
+/* 适配大小契合度 */
+.newValine{
+width: min(96%, 940px);
+flex-direction: column;
+ row-gap: var(--hope-space-2);
+ border-radius: var(--hope-radii-xl);
+ padding: var(--hope-space-2);
+ box-shadow: var(--hope-shadows-lg);
+}
+/* 评论区 - 白天模式透明度 */
+.hope-ui-light .newValine{
+background-color: rgba(255, 255, 255, 0.8) !important;
+}
+/* 评论区 - 夜间模式透明度 */
+.hope-ui-dark .newValine{
+background-color:rgb(0 0 0 / 80%) !important;
+}
+/* 输入栏里面跳舞的小人背景图 */
+.vedit{
+    background-image:url(https://cdn.jsdelivr.net/gh/anwen-anyi/imgAnwen/images/OuNiJiang.gif); 
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position:right bottom;
+    transition:all 0.25s ease-in-out 0s;
+    }
+    textarea#comment-textarea:focus{
+    background-position-y:120px;
+    transition:all 0.25s ease-in-out 0s;
+}	
 
-/*渐变背景CSS*/
+
+/* 渐变背景CSS */
 #canvas-basic {
 	position: fixed;
 	display: block;
