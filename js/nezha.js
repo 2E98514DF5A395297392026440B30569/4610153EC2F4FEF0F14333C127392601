@@ -5,6 +5,6 @@ var footer=document.querySelector("div.is-size-7")
 document.querySelector("[rel='shortcut icon']").href = "https://image.narutos.top/images/2023/11/06/128.png"
 footer.innerHTML="うずまきナルトのクラウドサーバー"
 footer.style.visibility="visible"
-avatar.src="https://s1.img.ink/2022/d2087fb7236f3.png"
+avatar.src="https://image.narutos.top/images/2023/11/06/128.png"
 avatar.style.visibility="visible"
 }
